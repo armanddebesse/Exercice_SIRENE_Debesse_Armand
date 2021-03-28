@@ -21,22 +21,21 @@
         <div>
             <label for="siret">Saisir SIRET</label>
             <input type="text" id="siret" name="siret" maxlength="14" minlength="14" pattern="[0-9]" placeholder="Saisir 14 Chiffres">
-            <input type="submit" id="button" value="rechercher">
+            <input type="submit" id="button" value="Go">
         </div>
 
         <!-- retour -->
         <div>
-        <h2>Dénomination : </h2>
-        <p id="denomination"></p>
+        <h2 id="denomination"></h2>
         </div>
 
         <div>
-        <h2>Adresse : </h2>
+
         <p id="adresse"></p>
         </div>
 
         <div>
-        <h2>Date dernier traitement : </h2>
+
         <p id="date"></p>
         </div>
 

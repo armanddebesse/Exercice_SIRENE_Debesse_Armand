@@ -13,7 +13,7 @@ $("#button").click(function(){
         // on affiche les données
         $('#denomination').html(data.etablissement.unite_legale.denomination);
         $('#adresse').html(data.etablissement.geo_adresse);
-        $('#date').html(data.etablissement.unite_legale.date_dernier_traitement);
+        $('#date').html(data.etablissement.unite_legale.date_dernier_traitement.substr(0,10));
 
         // on crée la map en fonction des coordonnées de l'entreprise
         var mymap = L.map('mapid').setView([data.etablissement.latitude, data.etablissement.longitude], 13);
